@@ -55,6 +55,15 @@ settings:
         -
             label: Blue Topaz
             value: theme-bluetopaz-dark
+        -
+            label: Night Owl
+            value: theme-nightowl-dark
+        -
+            label: Kanso
+            value: theme-kanso-dark
+        -
+            label: Catppuccin Black
+            value: theme-catppuccinblack-dark
     -
         id: settings-rain-icon
         type: class-toggle
@@ -90,6 +99,9 @@ settings:
 			-
 				label: Cupertino
 				value: layout-cupertino
+            -
+				label: Mono
+				value: layout-mono
 
     -
         id: heading-options

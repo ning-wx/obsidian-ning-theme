@@ -1,28 +1,34 @@
 @use "./anthropic";
+@use "./caleus";
 // @use "./coffee";
 @use "./blue-topaz";
 @use "./flexoki";
 // @use "./awesome-dark";
 @use "./primary";
 @use "./love";
-// @use "./linux";
+@use "./night-owl";
 // @use "./nord";
 @use "./rose-pine";
 @use "./solarized";
 @use "./gruvbox";
+@use "./kanso1";
+@use "./catppuccin-black";
 
 body {
   --color-gray: rgb(var(--callout-quote));
 
-  $colors: "red", "orange", "yellow", "green", "cyan", "blue", "purple", "pink",
+  $colors:
+    "red", "orange", "yellow", "green", "cyan", "blue", "purple", "pink",
     "gray", "accent";
 
   @each $color1 in $colors {
     @each $color2 in $colors {
       @if $color1 !=$color2 {
-        --color-#{$color1}-#{$color2}: color-mix(in srgb,
+        --color-#{$color1}-#{$color2}: color-mix(
+          in srgb,
           var(--color-#{$color1}),
-          var(--color-#{$color2}));
+          var(--color-#{$color2})
+        );
       }
     }
   }

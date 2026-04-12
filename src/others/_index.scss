@@ -15,9 +15,11 @@
 }
 
 // 隐藏其他列表属性的选项弹窗，除了cssclasses
-.suggestion-container.mod-property-value:not([data-property-key="cssclasses"]) {
-  display: none;
-}
+// .suggestion-container.mod-property-value:not(
+//     [data-property-key="cssclasses"]
+//   ):not([data-property-key="tags"]) {
+//   display: none;
+// }
 
 // base数字类型左对齐
 .bases-table-cell .metadata-input-number,

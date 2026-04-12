@@ -5,6 +5,9 @@
   --accent-s: 45%;
   --accent-l: 45%;
 
+  --mono-rgb-0: 245, 241, 235;
+  --mono-rgb-100: 45, 37, 32;
+
   --color-l-gray-10: hsla(36, 38%, 98%, 1);
   --color-l-gray-20: hsla(35, 36%, 96%, 1);
   --color-l-gray-30: hsla(35, 37%, 92%, 1);
@@ -69,7 +72,7 @@
   --color-cyan: #56706b;
   --color-blue: #728c99;
   --color-purple: #9d868e;
-  --color-pink: #9d868e;
+  --color-pink: #c28b8f;
 
   --color-red-rgb: 191, 97, 89;
   --color-orange-rgb: 199, 141, 117;
@@ -78,7 +81,7 @@
   --color-cyan-rgb: 86, 112, 107;
   --color-blue-rgb: 114, 140, 153;
   --color-purple-rgb: 157, 134, 142;
-  --color-pink-rgb: 157, 134, 142;
+  --color-pink-rgb: 194, 139, 143;
 
   --code-normal: #383a42;
   --code-comment: var(--text-faint);
@@ -90,6 +93,9 @@
   --code-string: #0d97b3;
   --code-tag: #e45749;
   --code-value: #a626a4;
+
+  --link-external-color: var(--color-blue);
+  --link-external-color-hover: var(--color-blue);
 }
 
 .theme-dark.theme-love-dark {
@@ -98,6 +104,9 @@
   --accent-h: 15;
   --accent-s: 32%;
   --accent-l: 66%;
+
+  --mono-rgb-0: 26, 23, 20;
+  --mono-rgb-100: 204, 198, 189;
 
   --hsl-color-base-00: 24, 10%, 10%;
   --hsl-color-base-05: 12, 6%, 15%;
@@ -164,7 +173,7 @@
   --color-cyan: #8daeb3;
   --color-blue: #9bb0bd;
   --color-purple: #c9b1b9;
-  --color-pink: #c9b1b9;
+  --color-pink: #dc9ca3;
   --color-red-rgb: 219, 142, 136;
   --color-orange-rgb: 222, 174, 160;
   --color-yellow-rgb: 224, 188, 126;
@@ -172,5 +181,8 @@
   --color-cyan-rgb: 141, 174, 179;
   --color-blue-rgb: 155, 176, 189;
   --color-purple-rgb: 201, 177, 185;
-  --color-pink-rgb: 201, 177, 185;
+  --color-pink-rgb: 220, 156, 163;
+
+  --link-external-color: var(--color-blue);
+  --link-external-color-hover: var(--color-blue);
 }

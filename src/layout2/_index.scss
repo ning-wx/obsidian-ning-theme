@@ -4,6 +4,7 @@
 @use "./layout-style";
 @use "./cupertino";
 @use "./minimal";
+@use "./mono";
 // @use "./sidedock";
 
 body:not(.is-mobile) {

@@ -1,63 +1,122 @@
 @charset "UTF-8";
 .theme-light.theme-anthropic-light {
   color-scheme: light;
-  --accent-h: 21.1;
-  --accent-s: 62.7%;
-  --accent-l: 47.3%;
-  --color-l-gray-10: hsla(36, 38%, 98%, 1);
-  --color-l-gray-20: hsla(35, 36%, 96%, 1);
-  --color-l-gray-30: hsla(35, 37%, 92%, 1);
-  --color-l-gray-40: hsla(34, 34%, 90%, 1);
-  --color-l-gray-50: hsla(36, 35%, 88%, 1);
-  --color-l-gray-60: hsla(37, 38%, 83%, 1);
-  --color-l-gray-70: hsla(34, 37%, 70%, 1);
-  --color-l-gray-80: hsla(34, 29%, 60%, 1);
-  --color-l-gray-90: hsla(31, 23%, 50%, 1);
-  --color-l-gray-100: hsla(35, 28%, 40%, 1);
-  --color-l-gray-110: hsla(34, 30%, 37%, 1);
-  --color-l-gray-120: hsla(36, 32%, 30%, 1);
-  --color-l-gray-130: hsla(31, 45%, 24%, 1);
-  --color-l-gray-140: hsla(33, 54%, 17%, 1);
-  --color-base-00: var(--color-l-gray-10);
-  --color-base-05: var(--color-l-gray-20);
-  --color-base-10: var(--color-l-gray-30);
-  --color-base-20: var(--color-l-gray-40);
-  --color-base-25: var(--color-l-gray-50);
-  --color-base-30: var(--color-l-gray-60);
-  --color-base-35: var(--color-l-gray-70);
-  --color-base-40: var(--color-l-gray-80);
-  --color-base-50: var(--color-l-gray-90);
-  --color-base-60: var(--color-l-gray-100);
-  --color-base-70: var(--color-l-gray-120);
-  --color-base-100: var(--color-l-gray-140);
-  --color-red: #bd4043;
-  --color-orange: #e2660c;
-  --color-yellow: #bba538;
-  --color-green: #158237;
-  --color-cyan: #56706b;
-  --color-blue: #0054a3;
-  --color-purple: #583f84;
-  --color-pink: #bb5a38;
+  --accent-h: 15;
+  --accent-s: 63.1%;
+  --accent-l: 59.6%;
+  --color-base-00: hsl(0 0% 100%);
+  --color-base-05: hsl(48 33.3% 97.1%);
+  --color-base-10: hsl(53 28.6% 94.5%);
+  --color-base-20: hsl(34 34% 90%);
+  --color-base-25: #e4ddd3;
+  --color-base-30: hsl(48 25% 92.2%);
+  --color-base-35: hsl(50 20.7% 88.6%);
+  --color-base-40: hsl(51 16.5% 84.5%);
+  --color-base-50: hsl(51 3.1% 43.7%);
+  --color-base-60: hsl(60 2.5% 23.3%);
+  --color-base-70: hsl(60 2.6% 7.6%);
+  --color-base-100: hsl(0 0% 0%);
+  --color-red: hsl(0 56.2% 45.4%);
+  --color-orange: hsl(15 54.2% 51.2%);
+  --color-yellow: hsl(39 88.8% 28%);
+  --color-green: hsl(103 72.3% 26.9%);
+  --color-cyan: hsl(160 10% 40%);
+  --color-blue: hsl(210 70.9% 51.6%);
+  --color-purple: hsl(251 40% 45.1%);
+  --color-pink: hsl(15 50% 40%);
   --color-red-rgb: 189, 64, 67;
-  --color-orange-rgb: 226, 102, 12;
-  --color-yellow-rgb: 187, 165, 56;
-  --color-green-rgb: 21, 130, 55;
-  --color-cyan-rgb: 86, 112, 107;
-  --color-blue-rgb: 0, 84, 163;
-  --color-purple-rgb: 88, 63, 132;
-  --color-pink-rgb: 187, 90, 56;
+  --color-orange-rgb: 229, 122, 53;
+  --color-yellow-rgb: 179, 144, 22;
+  --color-green-rgb: 26, 138, 53;
+  --color-cyan-rgb: 91, 102, 97;
+  --color-blue-rgb: 45, 95, 219;
+  --color-purple-rgb: 122, 77, 170;
+  --color-pink-rgb: 191, 96, 61;
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --text-normal: #1a1a1a;
-  --text-muted: #6b6459;
-  --text-faint: #9c9080;
-  --background-primary: #f5f0e8;
-  --background-primary-alt: #ede8df;
-  --background-secondary: rgb(232, 231, 221);
-  --background-secondary-alt: #ecece4;
+  --text-normal: hsl(60 2.6% 7.6%);
+  --text-muted: hsl(60 2.5% 23.3%);
+  --text-faint: hsl(51 3.1% 43.7%);
+  --background-primary: hsl(48 33.3% 97.1%);
+  --background-primary-alt: hsl(53 28.6% 94.5%);
+  --background-secondary: hsl(48 25% 92.2%);
+  --background-secondary-alt: hsl(50 20.7% 88.6%);
   --background-modifier-border: #e4ddd3;
   --background-modifier-border-hover: #d6cfc4;
-  --code-background: #ede8df;
+  --code-background: hsl(0 0% 100%);
+}
+
+.theme-dark.theme-caleus-dark {
+  --cl-black: hsl(140, 1%, 6%);
+  --cl-gray-0: hsl(140, 2%, 8%);
+  --cl-gray-1: hsl(140, 2%, 12%);
+  --cl-gray-2: hsl(140, 4%, 16%);
+  --cl-gray-3: hsl(140, 4%, 24%);
+  --cl-gray-4: hsl(140, 4%, 36%);
+  --cl-gray-5: hsl(140, 4%, 44%);
+  --cl-gray-6: hsl(80, 8%, 52%);
+  --cl-gray-7: hsl(70, 8%, 58%);
+  --cl-gray-8: hsl(60, 16%, 66%);
+  --cl-gray-9: hsl(40, 32%, 78%);
+  --cl-gray-10: hsl(30, 32%, 84%);
+  --cl-white: hsl(26, 64%, 88%);
+  --cl-red-6: hsl(4, 83%, 67%);
+  --cl-red-7: hsl(4, 75%, 75%);
+  --cl-orange-6: hsl(26, 84%, 62%);
+  --cl-orange-7: hsl(26, 84%, 74%);
+  --cl-yellow: hsl(37, 80%, 69%);
+  --cl-green-6: hsl(120, 41%, 64%);
+  --cl-green-7: hsl(120, 42%, 75%);
+  --cl-cyan-6: hsl(160, 41%, 64%);
+  --cl-cyan-7: hsl(160, 32%, 75%);
+  --cl-blue-6: hsl(200, 55%, 64%);
+  --cl-blue-8: hsl(201, 55%, 80%);
+  --cl-magenta-7: hsl(320, 59%, 72%);
+  --cl-magenta-8: hsl(320, 61%, 80%);
+  color-scheme: dark;
+  --accent-h: 15;
+  --accent-s: 32%;
+  --accent-l: 66%;
+  --color-base-00: var(--cl-black);
+  --color-base-05: var(--cl-gray-0);
+  --color-base-10: var(--cl-gray-1);
+  --color-base-20: var(--cl-gray-2);
+  --color-base-25: var(--cl-gray-2);
+  --color-base-30: var(--cl-gray-3);
+  --color-base-35: var(--cl-gray-3);
+  --color-base-40: var(--cl-gray-4);
+  --color-base-50: var(--cl-gray-5);
+  --color-base-60: var(--cl-gray-6);
+  --color-base-70: var(--cl-gray-7);
+  --color-base-100: var(--cl-gray-8);
+  --text-normal: var(--cl-gray-10);
+  --text-faint: var(--cl-gray-9);
+  --text-muted: var(--cl-gray-8);
+  --text-on-accent: var(--cl-gray-0);
+  --background-primary: var(--cl-black);
+  --background-secondary: var(--color-base-10);
+  --link-color: var(--cl-orange-6);
+  --link-color-hover: var(--cl-orange-6);
+  --link-external-color: #db8e88;
+  --link-external-color-hover: #db8e88;
+  --color-gray-rgb: 166, 150, 142;
+  --color-gray: rgb(166, 150, 141);
+  --color-red: var(--cl-red-6);
+  --color-orange: var(--cl-orange-6);
+  --color-yellow: var(--cl-yellow);
+  --color-green: var(--cl-green-6);
+  --color-cyan: var(--cl-cyan-6);
+  --color-blue: var(--cl-blue-6);
+  --color-purple: var(--cl-magenta-7);
+  --color-pink: var(--cl-magenta-7);
+  --color-red-rgb: 241, 110, 101;
+  --color-orange-rgb: 244, 181, 133;
+  --color-yellow-rgb: 239, 191, 113;
+  --color-green-rgb: 126, 201, 126;
+  --color-cyan-rgb: 126, 201, 176;
+  --color-blue-rgb: 113, 180, 214;
+  --color-purple-rgb: 226, 141, 198;
+  --color-pink-rgb: 239, 150, 143;
 }
 
 .theme-dark.theme-bluetopaz-dark {
@@ -271,6 +330,8 @@
   --accent-h: 80;
   --accent-s: 45%;
   --accent-l: 45%;
+  --mono-rgb-0: 245, 241, 235;
+  --mono-rgb-100: 45, 37, 32;
   --color-l-gray-10: hsla(36, 38%, 98%, 1);
   --color-l-gray-20: hsla(35, 36%, 96%, 1);
   --color-l-gray-30: hsla(35, 37%, 92%, 1);
@@ -327,7 +388,7 @@
   --color-cyan: #56706b;
   --color-blue: #728c99;
   --color-purple: #9d868e;
-  --color-pink: #9d868e;
+  --color-pink: #c28b8f;
   --color-red-rgb: 191, 97, 89;
   --color-orange-rgb: 199, 141, 117;
   --color-yellow-rgb: 204, 158, 84;
@@ -335,7 +396,7 @@
   --color-cyan-rgb: 86, 112, 107;
   --color-blue-rgb: 114, 140, 153;
   --color-purple-rgb: 157, 134, 142;
-  --color-pink-rgb: 157, 134, 142;
+  --color-pink-rgb: 194, 139, 143;
   --code-normal: #383a42;
   --code-comment: var(--text-faint);
   --code-function: #b76b02;
@@ -346,6 +407,8 @@
   --code-string: #0d97b3;
   --code-tag: #e45749;
   --code-value: #a626a4;
+  --link-external-color: var(--color-blue);
+  --link-external-color-hover: var(--color-blue);
 }
 
 .theme-dark.theme-love-dark {
@@ -353,6 +416,8 @@
   --accent-h: 15;
   --accent-s: 32%;
   --accent-l: 66%;
+  --mono-rgb-0: 26, 23, 20;
+  --mono-rgb-100: 204, 198, 189;
   --hsl-color-base-00: 24, 10%, 10%;
   --hsl-color-base-05: 12, 6%, 15%;
   --hsl-color-base-10: 12, 6%, 15%;
@@ -401,7 +466,7 @@
   --color-cyan: #8daeb3;
   --color-blue: #9bb0bd;
   --color-purple: #c9b1b9;
-  --color-pink: #c9b1b9;
+  --color-pink: #dc9ca3;
   --color-red-rgb: 219, 142, 136;
   --color-orange-rgb: 222, 174, 160;
   --color-yellow-rgb: 224, 188, 126;
@@ -409,7 +474,113 @@
   --color-cyan-rgb: 141, 174, 179;
   --color-blue-rgb: 155, 176, 189;
   --color-purple-rgb: 201, 177, 185;
-  --color-pink-rgb: 201, 177, 185;
+  --color-pink-rgb: 220, 156, 163;
+  --link-external-color: var(--color-blue);
+  --link-external-color-hover: var(--color-blue);
+}
+
+.theme-dark.theme-nightowl-dark {
+  --accent-h: 221;
+  --accent-s: 100%;
+  --accent-l: 75.5%;
+  --color-base-00: #011627;
+  --color-base-05: #0b253a;
+  --color-base-10: #021320;
+  --color-base-20: #122d42;
+  --color-base-25: #1d3b53;
+  --color-base-30: #262a39;
+  --color-base-35: #2c3043;
+  --color-base-40: #4b6479;
+  --color-base-50: #5f7e97;
+  --color-base-60: #89a4bb;
+  --color-base-70: #d6deeb;
+  --color-base-100: #ffffff;
+  --text-normal: #d1d5db;
+  --text-muted: #9ca3af;
+  --text-faint: #5f7e97;
+  --background-primary: hsl(207deg, 95%, 8%);
+  --background-primary-alt: #011c32;
+  --background-secondary: #011c32;
+  --background-secondary-alt: #02223c;
+  --background-modifier-border: #122d42;
+  --background-modifier-border-hover: #122d42;
+  --color-red: #ff5555;
+  --color-orange: #ffb86c;
+  --color-yellow: #ffeb95;
+  --color-green: #c5e478;
+  --color-cyan: #7fdbca;
+  --color-blue: #82aaff;
+  --color-purple: #bd93f9;
+  --color-pink: #ff79c6;
+  --color-red-rgb: 255, 85, 85;
+  --color-orange-rgb: 255, 184, 108;
+  --color-yellow-rgb: 255, 235, 149;
+  --color-green-rgb: 197, 228, 120;
+  --color-cyan-rgb: 127, 219, 202;
+  --color-blue-rgb: 130, 170, 255;
+  --color-purple-rgb: 189, 147, 249;
+  --color-pink-rgb: 255, 121, 198;
+  --code-background: #01192d;
+  --h1-color: #ff79c6;
+  --h2-color: #82aaff;
+  --h3-color: #c5e478;
+  --h4-color: #ffb86c;
+  --h5-color: #bd93f9;
+  --h6-color: #8be9fd;
+  --link-color: #f78c6c;
+  --link-color-hover: #f78c6c;
+  --link-external-color: #f78c6c;
+  --link-external-color-hover: #f78c6c;
+}
+
+.wxn {
+  --background-primary: hsl(207deg, 95%, 8%);
+  --background-primary-alt: #011c32;
+  --background-secondary: #011c32;
+  --background-secondary-alt: #02223c;
+  --background-accent: #f8f8f2;
+  --background-modifier-border: #f8f8f2;
+  --background-modifier-form-field: rgba(0, 0, 0, 0.2);
+  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.5);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-success: #50fa7b; /*no sure*/
+  --background-modifier-error: #3d0000; /*no sure*/
+  --background-modifier-error-rgb: 61, 0, 0;
+  --background-modifier-error-hover: #470000;
+  --background-modifier-cover: rgba(0, 0, 0, 0.6);
+  --text-accent: #ffeb95;
+  --text-accent-hover: #8be9fd;
+  --text-bold-color: #50fa7b;
+  --text-italic-color: #ffeb95;
+  --text-italic-bold-color: #b380fb;
+  --text-normal: #f8f8f2;
+  --text-muted: #f8f8f2;
+  --text-faint: #7fdbca;
+  --text-highlight-bg: hsla(61deg, 100%, 32%, 0.8);
+  --text-error: #ff79c6;
+  --text-error-hover: #ff79c6;
+  --text-selection: #6272a4; /* Chromium precess this color with alpha channel */
+  --text-on-accent: #bd93f9;
+  --interactive-normal: #ffb86c;
+  --interactive-hover: #ff5555;
+  --interactive-accent: #ffeb95;
+  --interactive-accent-rgb: 123, 108, 217;
+  --interactive-accent-hover: #ff5555;
+  --scrollbar-active-thumb-bg: #282a36;
+  --scrollbar-bg: #282a36;
+  --scrollbar-thumb-bg: #282a36;
+  --text-title-h1: #ff79c6;
+  --text-title-h2: #82aaff;
+  --text-title-h3: #c5e478;
+  --text-title-h4: #ffb86c;
+  --text-title-h5: #50fa7b;
+  --text-title-h6: #8be9fd;
+  --inline-code: #bd93f9;
+  --code-block: #8be9fd;
+  --pre-code: #44475a;
+  --blockquote-border: #ffb86c;
+  --vim-cursor: #ff5555;
+  --border-color: #2b2727; /*also like transparent*/
 }
 
 .theme-light.theme-rosepine-light {
@@ -820,283 +991,557 @@ body.theme-gruvbox-dark {
   --nav-item-color-active: #fbf1c7;
 }
 
+.theme-dark.theme-kanso-dark {
+  /* Accent colors */
+  --accent-h: 208;
+  --accent-s: 64%;
+  --accent-l: 49%;
+  /* Palette 主色 */
+  --color-red: #e46876;
+  --color-red-rgb: 228, 104, 118;
+  --color-orange: #b98d7b;
+  --color-orange-rgb: 185, 141, 123;
+  --color-yellow: #dca561;
+  --color-yellow-rgb: 220, 165, 97;
+  --color-green: #98bb6c;
+  --color-green-rgb: 152, 187, 108;
+  --color-cyan: #8ea4a2;
+  --color-cyan-rgb: 142, 164, 162;
+  --color-blue: #7fb4ca;
+  --color-blue-rgb: 127, 180, 202;
+  --color-purple: #938aa9;
+  --color-purple-rgb: 147, 138, 169;
+  --color-pink: #a292a3;
+  --color-pink-rgb: 162, 146, 163;
+  /* Base background colors */
+  --color-base-00: #090e13;
+  --color-base-05: #14171d;
+  --color-base-10: #1c1e25;
+  --color-base-20: #22262d;
+  --color-base-25: #2a2c35;
+  --color-base-30: #393b44;
+  --color-base-35: #4b4e57;
+  --color-base-40: #5c6066;
+  --color-base-50: #909398;
+  --color-base-60: #a4a7a4;
+  --color-base-70: #c5c9c7;
+  --color-base-100: #f2f1ef;
+  /* Text */
+  --text-normal: #c5c9c7;
+  --text-muted: #a4a7a4;
+  --text-faint: #75797f;
+  /* Background */
+  --background-primary: #14171d;
+  --background-primary-alt: #22262d;
+  --background-secondary: #1c1e25;
+  --background-secondary-alt: #090e13;
+  --background-modifier-border: #2a2c35;
+  --background-modifier-border-hover: #393b44;
+}
+
+.theme-dark.theme-catppuccinblack-dark {
+  /* Accent colors */
+  --accent-h: 208;
+  --accent-s: 64%;
+  --accent-l: 49%;
+  /* Palette 主色 */
+  --color-red: #f38ba8;
+  --color-red-rgb: 243, 139, 168;
+  --color-orange: #fab387;
+  --color-orange-rgb: 250, 179, 135;
+  --color-yellow: #f9e2af;
+  --color-yellow-rgb: 249, 226, 175;
+  --color-green: #a6e3a1;
+  --color-green-rgb: 166, 227, 161;
+  --color-cyan: #89dceb;
+  --color-cyan-rgb: 137, 220, 235;
+  --color-blue: #89b4fa;
+  --color-blue-rgb: 137, 180, 250;
+  --color-purple: #b4befe;
+  --color-purple-rgb: 180, 190, 254;
+  --color-pink: #f5c2e7;
+  --color-pink-rgb: 245, 194, 231;
+  /* Base background colors */
+  --color-base-00: #090b10;
+  --color-base-05: #11111b;
+  --color-base-10: #181825;
+  --color-base-20: #1e1e2e;
+  --color-base-25: #313244;
+  --color-base-30: #45475a;
+  --color-base-35: #585b70;
+  --color-base-40: #6c7086;
+  --color-base-50: #9399b2;
+  --color-base-60: #a6adc8;
+  --color-base-70: #bac2de;
+  --color-base-100: #cdd6f4;
+  /* Text */
+  --text-normal: #cdd6f4;
+  --text-muted: #a6adc8;
+  --text-faint: #9399b2;
+  /* Background */
+  --background-primary: #000000;
+  --background-primary-alt: #181825;
+  --background-secondary: #090b10;
+}
+
 body {
   --color-gray: rgb(var(--callout-quote));
-  --color-red-orange: color-mix(in srgb,
+  --color-red-orange: color-mix(
+    in srgb,
     var(--color-red),
-    var(--color-orange));
-  --color-red-yellow: color-mix(in srgb,
+    var(--color-orange)
+  );
+  --color-red-yellow: color-mix(
+    in srgb,
     var(--color-red),
-    var(--color-yellow));
-  --color-red-green: color-mix(in srgb,
+    var(--color-yellow)
+  );
+  --color-red-green: color-mix(
+    in srgb,
     var(--color-red),
-    var(--color-green));
-  --color-red-cyan: color-mix(in srgb,
+    var(--color-green)
+  );
+  --color-red-cyan: color-mix(
+    in srgb,
     var(--color-red),
-    var(--color-cyan));
-  --color-red-blue: color-mix(in srgb,
+    var(--color-cyan)
+  );
+  --color-red-blue: color-mix(
+    in srgb,
     var(--color-red),
-    var(--color-blue));
-  --color-red-purple: color-mix(in srgb,
+    var(--color-blue)
+  );
+  --color-red-purple: color-mix(
+    in srgb,
     var(--color-red),
-    var(--color-purple));
-  --color-red-pink: color-mix(in srgb,
+    var(--color-purple)
+  );
+  --color-red-pink: color-mix(
+    in srgb,
     var(--color-red),
-    var(--color-pink));
-  --color-red-gray: color-mix(in srgb,
+    var(--color-pink)
+  );
+  --color-red-gray: color-mix(
+    in srgb,
     var(--color-red),
-    var(--color-gray));
-  --color-red-accent: color-mix(in srgb,
+    var(--color-gray)
+  );
+  --color-red-accent: color-mix(
+    in srgb,
     var(--color-red),
-    var(--color-accent));
-  --color-orange-red: color-mix(in srgb,
+    var(--color-accent)
+  );
+  --color-orange-red: color-mix(
+    in srgb,
     var(--color-orange),
-    var(--color-red));
-  --color-orange-yellow: color-mix(in srgb,
+    var(--color-red)
+  );
+  --color-orange-yellow: color-mix(
+    in srgb,
     var(--color-orange),
-    var(--color-yellow));
-  --color-orange-green: color-mix(in srgb,
+    var(--color-yellow)
+  );
+  --color-orange-green: color-mix(
+    in srgb,
     var(--color-orange),
-    var(--color-green));
-  --color-orange-cyan: color-mix(in srgb,
+    var(--color-green)
+  );
+  --color-orange-cyan: color-mix(
+    in srgb,
     var(--color-orange),
-    var(--color-cyan));
-  --color-orange-blue: color-mix(in srgb,
+    var(--color-cyan)
+  );
+  --color-orange-blue: color-mix(
+    in srgb,
     var(--color-orange),
-    var(--color-blue));
-  --color-orange-purple: color-mix(in srgb,
+    var(--color-blue)
+  );
+  --color-orange-purple: color-mix(
+    in srgb,
     var(--color-orange),
-    var(--color-purple));
-  --color-orange-pink: color-mix(in srgb,
+    var(--color-purple)
+  );
+  --color-orange-pink: color-mix(
+    in srgb,
     var(--color-orange),
-    var(--color-pink));
-  --color-orange-gray: color-mix(in srgb,
+    var(--color-pink)
+  );
+  --color-orange-gray: color-mix(
+    in srgb,
     var(--color-orange),
-    var(--color-gray));
-  --color-orange-accent: color-mix(in srgb,
+    var(--color-gray)
+  );
+  --color-orange-accent: color-mix(
+    in srgb,
     var(--color-orange),
-    var(--color-accent));
-  --color-yellow-red: color-mix(in srgb,
+    var(--color-accent)
+  );
+  --color-yellow-red: color-mix(
+    in srgb,
     var(--color-yellow),
-    var(--color-red));
-  --color-yellow-orange: color-mix(in srgb,
+    var(--color-red)
+  );
+  --color-yellow-orange: color-mix(
+    in srgb,
     var(--color-yellow),
-    var(--color-orange));
-  --color-yellow-green: color-mix(in srgb,
+    var(--color-orange)
+  );
+  --color-yellow-green: color-mix(
+    in srgb,
     var(--color-yellow),
-    var(--color-green));
-  --color-yellow-cyan: color-mix(in srgb,
+    var(--color-green)
+  );
+  --color-yellow-cyan: color-mix(
+    in srgb,
     var(--color-yellow),
-    var(--color-cyan));
-  --color-yellow-blue: color-mix(in srgb,
+    var(--color-cyan)
+  );
+  --color-yellow-blue: color-mix(
+    in srgb,
     var(--color-yellow),
-    var(--color-blue));
-  --color-yellow-purple: color-mix(in srgb,
+    var(--color-blue)
+  );
+  --color-yellow-purple: color-mix(
+    in srgb,
     var(--color-yellow),
-    var(--color-purple));
-  --color-yellow-pink: color-mix(in srgb,
+    var(--color-purple)
+  );
+  --color-yellow-pink: color-mix(
+    in srgb,
     var(--color-yellow),
-    var(--color-pink));
-  --color-yellow-gray: color-mix(in srgb,
+    var(--color-pink)
+  );
+  --color-yellow-gray: color-mix(
+    in srgb,
     var(--color-yellow),
-    var(--color-gray));
-  --color-yellow-accent: color-mix(in srgb,
+    var(--color-gray)
+  );
+  --color-yellow-accent: color-mix(
+    in srgb,
     var(--color-yellow),
-    var(--color-accent));
-  --color-green-red: color-mix(in srgb,
+    var(--color-accent)
+  );
+  --color-green-red: color-mix(
+    in srgb,
     var(--color-green),
-    var(--color-red));
-  --color-green-orange: color-mix(in srgb,
+    var(--color-red)
+  );
+  --color-green-orange: color-mix(
+    in srgb,
     var(--color-green),
-    var(--color-orange));
-  --color-green-yellow: color-mix(in srgb,
+    var(--color-orange)
+  );
+  --color-green-yellow: color-mix(
+    in srgb,
     var(--color-green),
-    var(--color-yellow));
-  --color-green-cyan: color-mix(in srgb,
+    var(--color-yellow)
+  );
+  --color-green-cyan: color-mix(
+    in srgb,
     var(--color-green),
-    var(--color-cyan));
-  --color-green-blue: color-mix(in srgb,
+    var(--color-cyan)
+  );
+  --color-green-blue: color-mix(
+    in srgb,
     var(--color-green),
-    var(--color-blue));
-  --color-green-purple: color-mix(in srgb,
+    var(--color-blue)
+  );
+  --color-green-purple: color-mix(
+    in srgb,
     var(--color-green),
-    var(--color-purple));
-  --color-green-pink: color-mix(in srgb,
+    var(--color-purple)
+  );
+  --color-green-pink: color-mix(
+    in srgb,
     var(--color-green),
-    var(--color-pink));
-  --color-green-gray: color-mix(in srgb,
+    var(--color-pink)
+  );
+  --color-green-gray: color-mix(
+    in srgb,
     var(--color-green),
-    var(--color-gray));
-  --color-green-accent: color-mix(in srgb,
+    var(--color-gray)
+  );
+  --color-green-accent: color-mix(
+    in srgb,
     var(--color-green),
-    var(--color-accent));
-  --color-cyan-red: color-mix(in srgb,
+    var(--color-accent)
+  );
+  --color-cyan-red: color-mix(
+    in srgb,
     var(--color-cyan),
-    var(--color-red));
-  --color-cyan-orange: color-mix(in srgb,
+    var(--color-red)
+  );
+  --color-cyan-orange: color-mix(
+    in srgb,
     var(--color-cyan),
-    var(--color-orange));
-  --color-cyan-yellow: color-mix(in srgb,
+    var(--color-orange)
+  );
+  --color-cyan-yellow: color-mix(
+    in srgb,
     var(--color-cyan),
-    var(--color-yellow));
-  --color-cyan-green: color-mix(in srgb,
+    var(--color-yellow)
+  );
+  --color-cyan-green: color-mix(
+    in srgb,
     var(--color-cyan),
-    var(--color-green));
-  --color-cyan-blue: color-mix(in srgb,
+    var(--color-green)
+  );
+  --color-cyan-blue: color-mix(
+    in srgb,
     var(--color-cyan),
-    var(--color-blue));
-  --color-cyan-purple: color-mix(in srgb,
+    var(--color-blue)
+  );
+  --color-cyan-purple: color-mix(
+    in srgb,
     var(--color-cyan),
-    var(--color-purple));
-  --color-cyan-pink: color-mix(in srgb,
+    var(--color-purple)
+  );
+  --color-cyan-pink: color-mix(
+    in srgb,
     var(--color-cyan),
-    var(--color-pink));
-  --color-cyan-gray: color-mix(in srgb,
+    var(--color-pink)
+  );
+  --color-cyan-gray: color-mix(
+    in srgb,
     var(--color-cyan),
-    var(--color-gray));
-  --color-cyan-accent: color-mix(in srgb,
+    var(--color-gray)
+  );
+  --color-cyan-accent: color-mix(
+    in srgb,
     var(--color-cyan),
-    var(--color-accent));
-  --color-blue-red: color-mix(in srgb,
+    var(--color-accent)
+  );
+  --color-blue-red: color-mix(
+    in srgb,
     var(--color-blue),
-    var(--color-red));
-  --color-blue-orange: color-mix(in srgb,
+    var(--color-red)
+  );
+  --color-blue-orange: color-mix(
+    in srgb,
     var(--color-blue),
-    var(--color-orange));
-  --color-blue-yellow: color-mix(in srgb,
+    var(--color-orange)
+  );
+  --color-blue-yellow: color-mix(
+    in srgb,
     var(--color-blue),
-    var(--color-yellow));
-  --color-blue-green: color-mix(in srgb,
+    var(--color-yellow)
+  );
+  --color-blue-green: color-mix(
+    in srgb,
     var(--color-blue),
-    var(--color-green));
-  --color-blue-cyan: color-mix(in srgb,
+    var(--color-green)
+  );
+  --color-blue-cyan: color-mix(
+    in srgb,
     var(--color-blue),
-    var(--color-cyan));
-  --color-blue-purple: color-mix(in srgb,
+    var(--color-cyan)
+  );
+  --color-blue-purple: color-mix(
+    in srgb,
     var(--color-blue),
-    var(--color-purple));
-  --color-blue-pink: color-mix(in srgb,
+    var(--color-purple)
+  );
+  --color-blue-pink: color-mix(
+    in srgb,
     var(--color-blue),
-    var(--color-pink));
-  --color-blue-gray: color-mix(in srgb,
+    var(--color-pink)
+  );
+  --color-blue-gray: color-mix(
+    in srgb,
     var(--color-blue),
-    var(--color-gray));
-  --color-blue-accent: color-mix(in srgb,
+    var(--color-gray)
+  );
+  --color-blue-accent: color-mix(
+    in srgb,
     var(--color-blue),
-    var(--color-accent));
-  --color-purple-red: color-mix(in srgb,
+    var(--color-accent)
+  );
+  --color-purple-red: color-mix(
+    in srgb,
     var(--color-purple),
-    var(--color-red));
-  --color-purple-orange: color-mix(in srgb,
+    var(--color-red)
+  );
+  --color-purple-orange: color-mix(
+    in srgb,
     var(--color-purple),
-    var(--color-orange));
-  --color-purple-yellow: color-mix(in srgb,
+    var(--color-orange)
+  );
+  --color-purple-yellow: color-mix(
+    in srgb,
     var(--color-purple),
-    var(--color-yellow));
-  --color-purple-green: color-mix(in srgb,
+    var(--color-yellow)
+  );
+  --color-purple-green: color-mix(
+    in srgb,
     var(--color-purple),
-    var(--color-green));
-  --color-purple-cyan: color-mix(in srgb,
+    var(--color-green)
+  );
+  --color-purple-cyan: color-mix(
+    in srgb,
     var(--color-purple),
-    var(--color-cyan));
-  --color-purple-blue: color-mix(in srgb,
+    var(--color-cyan)
+  );
+  --color-purple-blue: color-mix(
+    in srgb,
     var(--color-purple),
-    var(--color-blue));
-  --color-purple-pink: color-mix(in srgb,
+    var(--color-blue)
+  );
+  --color-purple-pink: color-mix(
+    in srgb,
     var(--color-purple),
-    var(--color-pink));
-  --color-purple-gray: color-mix(in srgb,
+    var(--color-pink)
+  );
+  --color-purple-gray: color-mix(
+    in srgb,
     var(--color-purple),
-    var(--color-gray));
-  --color-purple-accent: color-mix(in srgb,
+    var(--color-gray)
+  );
+  --color-purple-accent: color-mix(
+    in srgb,
     var(--color-purple),
-    var(--color-accent));
-  --color-pink-red: color-mix(in srgb,
+    var(--color-accent)
+  );
+  --color-pink-red: color-mix(
+    in srgb,
     var(--color-pink),
-    var(--color-red));
-  --color-pink-orange: color-mix(in srgb,
+    var(--color-red)
+  );
+  --color-pink-orange: color-mix(
+    in srgb,
     var(--color-pink),
-    var(--color-orange));
-  --color-pink-yellow: color-mix(in srgb,
+    var(--color-orange)
+  );
+  --color-pink-yellow: color-mix(
+    in srgb,
     var(--color-pink),
-    var(--color-yellow));
-  --color-pink-green: color-mix(in srgb,
+    var(--color-yellow)
+  );
+  --color-pink-green: color-mix(
+    in srgb,
     var(--color-pink),
-    var(--color-green));
-  --color-pink-cyan: color-mix(in srgb,
+    var(--color-green)
+  );
+  --color-pink-cyan: color-mix(
+    in srgb,
     var(--color-pink),
-    var(--color-cyan));
-  --color-pink-blue: color-mix(in srgb,
+    var(--color-cyan)
+  );
+  --color-pink-blue: color-mix(
+    in srgb,
     var(--color-pink),
-    var(--color-blue));
-  --color-pink-purple: color-mix(in srgb,
+    var(--color-blue)
+  );
+  --color-pink-purple: color-mix(
+    in srgb,
     var(--color-pink),
-    var(--color-purple));
-  --color-pink-gray: color-mix(in srgb,
+    var(--color-purple)
+  );
+  --color-pink-gray: color-mix(
+    in srgb,
     var(--color-pink),
-    var(--color-gray));
-  --color-pink-accent: color-mix(in srgb,
+    var(--color-gray)
+  );
+  --color-pink-accent: color-mix(
+    in srgb,
     var(--color-pink),
-    var(--color-accent));
-  --color-gray-red: color-mix(in srgb,
+    var(--color-accent)
+  );
+  --color-gray-red: color-mix(
+    in srgb,
     var(--color-gray),
-    var(--color-red));
-  --color-gray-orange: color-mix(in srgb,
+    var(--color-red)
+  );
+  --color-gray-orange: color-mix(
+    in srgb,
     var(--color-gray),
-    var(--color-orange));
-  --color-gray-yellow: color-mix(in srgb,
+    var(--color-orange)
+  );
+  --color-gray-yellow: color-mix(
+    in srgb,
     var(--color-gray),
-    var(--color-yellow));
-  --color-gray-green: color-mix(in srgb,
+    var(--color-yellow)
+  );
+  --color-gray-green: color-mix(
+    in srgb,
     var(--color-gray),
-    var(--color-green));
-  --color-gray-cyan: color-mix(in srgb,
+    var(--color-green)
+  );
+  --color-gray-cyan: color-mix(
+    in srgb,
     var(--color-gray),
-    var(--color-cyan));
-  --color-gray-blue: color-mix(in srgb,
+    var(--color-cyan)
+  );
+  --color-gray-blue: color-mix(
+    in srgb,
     var(--color-gray),
-    var(--color-blue));
-  --color-gray-purple: color-mix(in srgb,
+    var(--color-blue)
+  );
+  --color-gray-purple: color-mix(
+    in srgb,
     var(--color-gray),
-    var(--color-purple));
-  --color-gray-pink: color-mix(in srgb,
+    var(--color-purple)
+  );
+  --color-gray-pink: color-mix(
+    in srgb,
     var(--color-gray),
-    var(--color-pink));
-  --color-gray-accent: color-mix(in srgb,
+    var(--color-pink)
+  );
+  --color-gray-accent: color-mix(
+    in srgb,
     var(--color-gray),
-    var(--color-accent));
-  --color-accent-red: color-mix(in srgb,
+    var(--color-accent)
+  );
+  --color-accent-red: color-mix(
+    in srgb,
     var(--color-accent),
-    var(--color-red));
-  --color-accent-orange: color-mix(in srgb,
+    var(--color-red)
+  );
+  --color-accent-orange: color-mix(
+    in srgb,
     var(--color-accent),
-    var(--color-orange));
-  --color-accent-yellow: color-mix(in srgb,
+    var(--color-orange)
+  );
+  --color-accent-yellow: color-mix(
+    in srgb,
     var(--color-accent),
-    var(--color-yellow));
-  --color-accent-green: color-mix(in srgb,
+    var(--color-yellow)
+  );
+  --color-accent-green: color-mix(
+    in srgb,
     var(--color-accent),
-    var(--color-green));
-  --color-accent-cyan: color-mix(in srgb,
+    var(--color-green)
+  );
+  --color-accent-cyan: color-mix(
+    in srgb,
     var(--color-accent),
-    var(--color-cyan));
-  --color-accent-blue: color-mix(in srgb,
+    var(--color-cyan)
+  );
+  --color-accent-blue: color-mix(
+    in srgb,
     var(--color-accent),
-    var(--color-blue));
-  --color-accent-purple: color-mix(in srgb,
+    var(--color-blue)
+  );
+  --color-accent-purple: color-mix(
+    in srgb,
     var(--color-accent),
-    var(--color-purple));
-  --color-accent-pink: color-mix(in srgb,
+    var(--color-purple)
+  );
+  --color-accent-pink: color-mix(
+    in srgb,
     var(--color-accent),
-    var(--color-pink));
-  --color-accent-gray: color-mix(in srgb,
+    var(--color-pink)
+  );
+  --color-accent-gray: color-mix(
+    in srgb,
     var(--color-accent),
-    var(--color-gray));
+    var(--color-gray)
+  );
 }
 
 body {
   --bases-header-border-width: 0;
   --bases-table-header-color: var(--text-faint);
+  --table-border-color: var(--background-modifier-border-hover);
 }
 
 .query-toolbar-menu,
@@ -1107,7 +1552,7 @@ body {
 }
 
 .text-icon-button {
-  border-radius: var(--clickable-icon-radius);
+  border-radius: var(--radius-m);
 }
 
 body:not(.is-phone) .menu.bases-toolbar-menu {
@@ -1121,8 +1566,8 @@ body:not(.is-phone) .menu.bases-toolbar-menu .search-input-container {
   margin: var(--menu-padding) var(--menu-padding) 0;
   padding-bottom: 0;
   background: var(--background-modifier-form-field);
-  border: var(--input-border-width) solid var(--background-modifier-border);
-  border-radius: var(--input-radius);
+  border: var(--input-border-width) solid var(--background-modifier-border-hover);
+  border-radius: var(--radius-m);
 }
 body:not(.is-phone) .menu.mod-filters {
   padding: 4px;
@@ -1151,7 +1596,7 @@ body:not(.is-phone) .menu.mod-filters .query-toolbar-section-header {
 
 .bases-thead .bases-td {
   box-shadow: none;
-  border-radius: var(--radius-s);
+  border-radius: var(--radius-m);
   overflow: visible;
 }
 
@@ -1160,7 +1605,7 @@ body:not(.is-phone) .menu.mod-filters .query-toolbar-section-header {
 }
 
 .bases-table-header-resizer {
-  border-radius: var(--radius-s);
+  border-radius: var(--radius-m);
 }
 
 .bases-table-cell > * {
@@ -1196,7 +1641,7 @@ body.bases-col-alt .bases-tbody .bases-tr > .bases-td:nth-child(2n+2) {
 }
 .workspace-leaf-content[data-type=markdown] .bases-embed .bases-view .bases-tbody {
   border: var(--bases-embed-border-width) solid var(--background-modifier-border-hover);
-  border-radius: var(--bases-embed-border-radius);
+  border-radius: var(--radius-m);
   overflow: hidden;
   background-color: var(--background-primary-alt);
 }
@@ -3890,6 +4335,88 @@ body.layout-minimal .mod-sidedock.mod-right-split .workspace-tabs .workspace-lea
   background-color: var(--background-primary);
 }
 
+.theme-light {
+  --lorenz-flow-opacity: 0.5;
+}
+
+.theme-dark {
+  --lorenz-flow-opacity: 0.6;
+}
+
+body.layout-mono:not(.is-mobile) {
+  --lorenz-flow-primary: rgb(var(--mono-rgb-0), var(--lorenz-flow-opacity));
+  --lorenz-flow-secondary: rgb(var(--mono-rgb-0), var(--lorenz-flow-opacity));
+  --file-header-background-focused: transparent;
+  --file-header-background: transparent;
+  --tab-container-background: transparent;
+  --titlebar-background: transparent;
+  --titlebar-background-focused: transparent;
+}
+body.layout-mono:not(.is-mobile) .workspace {
+  padding: 4px;
+  background-color: var(--lorenz-flow-secondary);
+}
+body.layout-mono:not(.is-mobile) .workspace-split.mod-root .view-content {
+  background-color: transparent;
+}
+body.layout-mono:not(.is-mobile) .workspace-ribbon,
+body.layout-mono:not(.is-mobile) .workspace-split {
+  margin: 4px;
+  height: unset;
+  background-color: var(--lorenz-flow-secondary);
+  border-radius: var(--layout-radius);
+  border: 1px solid var(--background-modifier-border-hover);
+  overflow: hidden;
+}
+body.layout-mono:not(.is-mobile) .mod-root {
+  overflow: hidden;
+}
+body.layout-mono:not(.is-mobile) .workspace-ribbon.mod-left .sidebar-toggle-button {
+  position: relative;
+  display: flex;
+  height: var(--header-height);
+  padding: 8px;
+  width: unset;
+  align-items: center;
+  justify-content: center;
+}
+body.layout-mono:not(.is-mobile):not(.mod-macos):not(.tab-top-left-stacked).css-settings-manager .workspace-ribbon.workspace-ribbon.mod-left .sidebar-toggle-button {
+  height: calc(var(--header-height) - 16px);
+}
+body.layout-mono:not(.is-mobile).mod-macos .workspace-ribbon.mod-left {
+  padding-top: var(--header-height);
+}
+body.layout-mono:not(.is-mobile):not(.mod-macos).is-frameless.is-hidden-frameless .titlebar {
+  height: var(--header-height);
+  top: 8px;
+  right: 8px;
+}
+body.layout-mono:not(.is-mobile):not(.mod-macos).is-frameless.is-hidden-frameless .titlebar .titlebar-button-container.mod-right {
+  border-top-right-radius: var(--layout-radius);
+  overflow: hidden;
+}
+body.layout-mono:not(.is-mobile) .mod-sidedock .workspace-sidedock-vault-profile {
+  background-color: var(--lorenz-flow-secondary);
+}
+body.layout-mono:not(.is-mobile) .status-bar {
+  right: 8px;
+  bottom: 8px;
+}
+body.layout-mono:not(.is-mobile).theme-light.contrast-light-vivid .workspace-ribbon,
+body.layout-mono:not(.is-mobile).theme-light.contrast-light-vivid .workspace-split {
+  border-color: #424242;
+}
+body.layout-mono:not(.is-mobile).theme-light.contrast-light-vivid .mod-root .workspace-tab-header-container::before {
+  background-color: var(--lorenz-flow-secondary);
+}
+body.layout-mono:not(.is-mobile).status-bar-full .workspace {
+  padding-bottom: 0;
+}
+body.layout-mono:not(.is-mobile).status-bar-full .workspace .workspace-ribbon,
+body.layout-mono:not(.is-mobile).status-bar-full .workspace .workspace-split {
+  margin-bottom: 0;
+}
+
 body:not(.is-mobile) {
   --layout-radius: var(--radius-xl);
 }
@@ -4304,10 +4831,6 @@ body:has(.cm-gutters) {
   font-feature-settings: "dlig" 1, "ss01" 1;
 }
 
-.suggestion-container.mod-property-value:not([data-property-key=cssclasses]) {
-  display: none;
-}
-
 .bases-table-cell .metadata-input-number,
 .bases-table-cell[data-property-type=number] {
   justify-content: initial;
@@ -4403,6 +4926,15 @@ settings:
         -
             label: Blue Topaz
             value: theme-bluetopaz-dark
+        -
+            label: Night Owl
+            value: theme-nightowl-dark
+        -
+            label: Kanso
+            value: theme-kanso-dark
+        -
+            label: Catppuccin Black
+            value: theme-catppuccinblack-dark
     -
         id: settings-rain-icon
         type: class-toggle
@@ -4438,6 +4970,9 @@ settings:
 			-
 				label: Cupertino
 				value: layout-cupertino
+            -
+				label: Mono
+				value: layout-mono
 
     -
         id: heading-options

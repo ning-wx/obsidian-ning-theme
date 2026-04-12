@@ -1,6 +1,7 @@
 body {
   --bases-header-border-width: 0;
   --bases-table-header-color: var(--text-faint);
+  --table-border-color: var(--background-modifier-border-hover);
 }
 
 // Menu
@@ -12,7 +13,7 @@ body {
 }
 
 .text-icon-button {
-  border-radius: var(--clickable-icon-radius);
+  border-radius: var(--radius-m);
 }
 
 body:not(.is-phone) .menu {
@@ -27,8 +28,9 @@ body:not(.is-phone) .menu {
     margin: var(--menu-padding) var(--menu-padding) 0;
     padding-bottom: 0;
     background: var(--background-modifier-form-field);
-    border: var(--input-border-width) solid var(--background-modifier-border);
-    border-radius: var(--input-radius);
+    border: var(--input-border-width) solid
+      var(--background-modifier-border-hover);
+    border-radius: var(--radius-m);
   }
 
   &.mod-filters {
@@ -56,14 +58,14 @@ body:not(.is-phone) .menu {
 }
 .bases-thead .bases-td {
   box-shadow: none;
-  border-radius: var(--radius-s);
+  border-radius: var(--radius-m);
   overflow: visible;
 }
 .bases-thead .bases-td:hover {
   --bases-table-header-color: var(--text-normal);
 }
 .bases-table-header-resizer {
-  border-radius: var(--radius-s);
+  border-radius: var(--radius-m);
 }
 
 .bases-table-cell > * {
@@ -101,8 +103,7 @@ body.bases-col-alt .bases-tbody .bases-tr > .bases-td:nth-child(2n + 2) {
   .bases-tbody {
     border: var(--bases-embed-border-width) solid
       var(--background-modifier-border-hover);
-    // var(--bases-embed-border-color);
-    border-radius: var(--bases-embed-border-radius);
+    border-radius: var(--radius-m);
     overflow: hidden;
     background-color: var(--background-primary-alt);
   }
