@@ -52,16 +52,19 @@ body {
   --nav-folder-collapse-color: var(--nav-collapse-icon-color);
 }
 
-body:not(.colorful-folders-length) {
-  .nav-folder-children > .nav-folder .nav-folder-title,
-  .nav-files-container > div > .nav-folder .nav-folder-title {
-    color: var(--nav-folder-color);
-    background: var(--nav-folder-bg-color);
-    border-radius: 6px;
+.nav-folder-children > .nav-folder .nav-folder-title,
+.nav-files-container > div > .nav-folder .nav-folder-title {
+  color: var(--nav-folder-color);
+  border-radius: 6px;
 
-    &:hover {
-      color: var(--nav-folder-color);
-      background: var(--nav-folder-bg-color-hover);
+  body:not(.colorful-folders-length) & {
+    background: var(--nav-folder-bg-color);
+  }
+
+  &:hover {
+    color: var(--nav-folder-color);
+    body:not(.colorful-folders-length) & {
+      background: var(--nav-folder-bg-color);
     }
   }
 }
@@ -158,6 +161,12 @@ $max-level: 7;
 $max-color: 8; // 彩虹颜色数量
 
 body.colorful-folders-length {
+  // .nav-folder-title {
+  //   position: relative;
+  //   overflow: hidden;
+  //   background: transparent;
+  // }
+
   .nav-folder-title::before {
     content: "";
     position: absolute;
@@ -331,6 +340,9 @@ body.alt-folder-icons {
     height: calc(var(--icon-size) - 1px);
     stroke-width: var(--icon-stroke);
     background: currentColor;
+    path {
+      color: transparent;
+    }
   }
 
   .nav-folder .tree-item-icon.is-collapsed svg.right-triangle {

@@ -177,26 +177,22 @@
     calc(0.9 * var(--accent-l))
   );
   --background-modifier-border-muted: var(--color-base-20);
-  --background-modifier-border: var(--color-base-25);
-  --background-modifier-border-hover: var(--color-base-30);
+  --background-modifier-border: var(--color-base-20);
+  --background-modifier-border-hover: var(--color-base-25);
   --background-modifier-border-focus: var(--color-base-35);
   --background-primary: var(--color-base-00);
   --background-primary-alt: var(--color-base-10);
   --background-secondary: var(--color-base-10);
-  --background-secondary-alt: var(--color-base-15);
-  --background-tertiary: var(--color-base-15);
-  --workspace-background-translucent: color-mix(
-    in srgb,
-    var(--color-base-00) 60%,
-    transparent
-  );
-  --background-modifier-hover: var(--color-base-20);
-  --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
-  --background-modifier-cover: rgba(10, 10, 10, 0.4);
+  --background-secondary-alt: var(--color-base-20);
+
   --background-modifier-form-field: transparent;
   --search-result-background: transparent;
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.4);
+
+  --link-color: #7dcfff;
+  --link-color-hover: #7dcfff;
+  --link-external-color: #7aa2f7;
+  --link-external-color-hover: #7aa2f7;
 }
