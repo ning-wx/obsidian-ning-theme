@@ -1,18 +1,15 @@
 @use "./anthropic";
-@use "./caleus";
 // @use "./coffee";
-@use "./blue-topaz";
 @use "./flexoki";
-// @use "./awesome-dark";
+@use "./awesome-dark";
 @use "./primary";
 @use "./love";
 @use "./night-owl";
-// @use "./nord";
 @use "./rose-pine";
 @use "./solarized";
 @use "./gruvbox";
-@use "./kanso1";
-@use "./catppuccin-black";
+@use "./kanso";
+@use "./catppuccin";
 
 body {
   --color-gray: rgb(var(--callout-quote));

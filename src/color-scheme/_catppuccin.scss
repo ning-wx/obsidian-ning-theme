@@ -1,0 +1,202 @@
+/* ============================================================
+   MOCHA  (dark, default)
+   ============================================================ */
+.theme-dark.theme-catppuccin-mocha {
+  /* — Raw palette — */
+  --ctp-rosewater: #f5e0dc;
+  --ctp-flamingo: #f2cdcd;
+  --ctp-pink: #f5c2e7;
+  --ctp-mauve: #cba6f7;
+  --ctp-red: #f38ba8;
+  --ctp-maroon: #eba0ac;
+  --ctp-peach: #fab387;
+  --ctp-yellow: #f9e2af;
+  --ctp-green: #a6e3a1;
+  --ctp-teal: #94e2d5;
+  --ctp-sky: #89dceb;
+  --ctp-sapphire: #74c7ec;
+  --ctp-blue: #89b4fa;
+  --ctp-lavender: #b4befe;
+  --ctp-text: #cdd6f4;
+  --ctp-subtext1: #bac2de;
+  --ctp-subtext0: #a6adc8;
+  --ctp-overlay2: #9399b2;
+  --ctp-overlay1: #7f849c;
+  --ctp-overlay0: #6c7086;
+  --ctp-surface2: #585b70;
+  --ctp-surface1: #45475a;
+  --ctp-surface0: #313244;
+  --ctp-base: #1e1e2e;
+  --ctp-mantle: #181825;
+  --ctp-crust: #11111b;
+
+  /* — Base color scale — */
+  --color-base-00: #1e1e2e; /* base      */
+  --color-base-10: #181825; /* mantle    */
+  --color-base-15: #11111b; /* crust     */
+  --color-base-20: #313244; /* surface0  */
+  --color-base-25: #45475a; /* surface1  */
+  --color-base-30: #585b70; /* surface2  */
+  --color-base-35: #6c7086; /* overlay0  */
+  --color-base-40: #7f849c; /* overlay1  */
+  --color-base-50: #9399b2; /* overlay2  */
+  --color-base-60: #a6adc8; /* subtext0  */
+  --color-base-70: #bac2de; /* subtext1  */
+  --color-base-100: #cdd6f4; /* text      */
+
+  /* — Text — */
+  --text-normal: #cdd6f4;
+  --text-muted: #bac2de;
+  --text-faint: #9399b2;
+
+  /* — Semantic colors — */
+  --color-red-rgb: 243, 139, 168;
+  --color-red: rgb(var(--color-red-rgb));
+  --color-green-rgb: 166, 227, 161;
+  --color-green: rgb(var(--color-green-rgb));
+  --color-orange-rgb: 250, 179, 135;
+  --color-orange: rgb(var(--color-orange-rgb));
+  --color-yellow-rgb: 249, 226, 175;
+  --color-yellow: rgb(var(--color-yellow-rgb));
+  --color-cyan-rgb: 148, 226, 213;
+  --color-cyan: rgb(var(--color-cyan-rgb));
+  --color-blue-rgb: 137, 180, 250;
+  --color-blue: rgb(var(--color-blue-rgb));
+  --color-purple-rgb: 203, 166, 247;
+  --color-purple: rgb(var(--color-purple-rgb));
+  --color-pink-rgb: 245, 194, 231;
+  --color-pink: rgb(var(--color-pink-rgb));
+
+  /* — Default accent: Mauve (official HSL) — */
+  --accent-dark-h: 267.407;
+  --accent-dark-s: 83.505%;
+  --accent-dark-l: 80.98%;
+}
+
+/* ============================================================
+   MACCHIATO  (dark variant)
+   ============================================================ */
+.theme-dark.theme-catppuccin-macchiato {
+  --ctp-rosewater: #f4dbd6;
+  --ctp-flamingo: #f0c6c6;
+  --ctp-pink: #f5bde6;
+  --ctp-mauve: #c6a0f6;
+  --ctp-red: #ed8796;
+  --ctp-maroon: #ee99a0;
+  --ctp-peach: #f5a97f;
+  --ctp-yellow: #eed49f;
+  --ctp-green: #a6da95;
+  --ctp-teal: #8bd5ca;
+  --ctp-sky: #91d7e3;
+  --ctp-sapphire: #7dc4e4;
+  --ctp-blue: #8aadf4;
+  --ctp-lavender: #b7bdf8;
+  --ctp-text: #cad3f5;
+  --ctp-subtext1: #b8c0e0;
+  --ctp-subtext0: #a5adcb;
+  --ctp-overlay2: #939ab7;
+  --ctp-overlay1: #8087a2;
+  --ctp-overlay0: #6e738d;
+  --ctp-surface2: #5b6078;
+  --ctp-surface1: #494d64;
+  --ctp-surface0: #363a4f;
+  --ctp-base: #24273a;
+  --ctp-mantle: #1e2030;
+  --ctp-crust: #181926;
+
+  --color-base-00: #24273a;
+  --color-base-10: #1e2030;
+  --color-base-15: #181926;
+  --color-base-20: #363a4f;
+  --color-base-25: #494d64;
+  --color-base-30: #5b6078;
+  --color-base-35: #6e738d;
+  --color-base-40: #8087a2;
+  --color-base-50: #939ab7;
+  --color-base-60: #a5adcb;
+  --color-base-70: #b8c0e0;
+  --color-base-100: #cad3f5;
+
+  --text-normal: #cad3f5;
+  --text-muted: #b8c0e0;
+  --text-faint: #939ab7;
+
+  --color-red-rgb: 237, 135, 150;
+  --color-red: rgb(var(--color-red-rgb));
+  --color-green-rgb: 166, 218, 149;
+  --color-green: rgb(var(--color-green-rgb));
+  --color-orange-rgb: 245, 169, 127;
+  --color-orange: rgb(var(--color-orange-rgb));
+  --color-yellow-rgb: 238, 212, 159;
+  --color-yellow: rgb(var(--color-yellow-rgb));
+  --color-cyan-rgb: 139, 213, 202;
+  --color-cyan: rgb(var(--color-cyan-rgb));
+  --color-blue-rgb: 138, 173, 244;
+  --color-blue: rgb(var(--color-blue-rgb));
+  --color-purple-rgb: 198, 160, 246;
+  --color-purple: rgb(var(--color-purple-rgb));
+  --color-pink-rgb: 245, 189, 230;
+  --color-pink: rgb(var(--color-pink-rgb));
+
+  /* — Default accent: Mauve Macchiato (official HSL) — */
+  --accent-dark-h: 266.512;
+  --accent-dark-s: 82.692%;
+  --accent-dark-l: 79.608%;
+}
+
+.theme-dark.theme-catppuccin-mocha,
+.theme-dark.theme-catppuccin-macchiato {
+  color-scheme: dark;
+  --text-accent: var(--color-accent-1);
+  --text-accent-hover: var(--color-accent-2);
+  --highlight-mix-blend-mode: lighten;
+  --mono-rgb-0: 30, 30, 46;
+  --accent-h: var(--accent-dark-h);
+  --accent-s: var(--accent-dark-s);
+  --accent-l: var(--accent-dark-l);
+  --color-accent-hsl: var(--color-accent-hsl-dark);
+  --color-accent: var(--color-accent-dark);
+  --color-accent-1: var(--color-accent-1-dark);
+  --color-accent-2: var(--color-accent-2-dark);
+  --color-accent-3: var(--color-accent-3-dark);
+  --color-accent-hsl-dark: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-accent-dark: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1-dark: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --color-accent-2-dark: hsl(
+    calc(var(--accent-h) - 5),
+    calc(var(--accent-s) * 1.05),
+    calc(var(--accent-l) * 1.29)
+  );
+  --color-accent-3-dark: hsla(
+    var(--accent-h),
+    calc(0.4 * var(--accent-s)),
+    calc(0.9 * var(--accent-l))
+  );
+  --background-modifier-border-muted: var(--color-base-20);
+  --background-modifier-border: var(--color-base-25);
+  --background-modifier-border-hover: var(--color-base-30);
+  --background-modifier-border-focus: var(--color-base-35);
+  --background-primary: var(--color-base-00);
+  --background-primary-alt: var(--color-base-10);
+  --background-secondary: var(--color-base-10);
+  --background-secondary-alt: var(--color-base-15);
+  --background-tertiary: var(--color-base-15);
+  --workspace-background-translucent: color-mix(
+    in srgb,
+    var(--color-base-00) 60%,
+    transparent
+  );
+  --background-modifier-hover: var(--color-base-20);
+  --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-cover: rgba(10, 10, 10, 0.4);
+  --background-modifier-form-field: transparent;
+  --search-result-background: transparent;
+  --text-highlight-bg: rgba(255, 208, 0, 0.4);
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
+  --text-selection: hsla(var(--interactive-accent-hsl), 0.4);
+}

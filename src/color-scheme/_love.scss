@@ -106,6 +106,7 @@
   --accent-l: 66%;
 
   --mono-rgb-0: 26, 23, 20;
+  // --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 204, 198, 189;
 
   --hsl-color-base-00: 24, 10%, 10%;
@@ -135,6 +136,7 @@
   --color-base-70: hsl(var(--hsl-color-base-70));
   --color-base-100: hsl(var(--hsl-color-base-100));
 
+  // --background-primary: #000000;
   // --background-primary: #1a1714;
   // --background-primary-alt: #221e1a;
   // --background-secondary: #2a2520;

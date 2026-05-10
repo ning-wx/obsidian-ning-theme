@@ -1,4 +1,4 @@
-body {
+body.theme-awesome-dark {
   --rx-amber-01: #1f1300;
   --rx-amber-02: #271700;
   --rx-amber-03: #341c00;
@@ -361,7 +361,7 @@ body {
   --color-gray-09: var(--lx-gray-09);
 }
 
-.theme-dark {
+.theme-dark.theme-awesome-dark {
   --accent-h: 203;
   --accent-s: 20%;
   --accent-l: 68%;

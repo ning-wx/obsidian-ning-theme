@@ -53,17 +53,20 @@ settings:
             label: Rosé Pine
             value: theme-rosepine-dark
         -
-            label: Blue Topaz
-            value: theme-bluetopaz-dark
-        -
             label: Night Owl
             value: theme-nightowl-dark
         -
             label: Kanso
             value: theme-kanso-dark
         -
-            label: Catppuccin Black
-            value: theme-catppuccinblack-dark
+            label: Awesome
+            value: theme-awesome-dark
+        -
+            label: Catppuccin Mocha
+            value: theme-catppuccin-mocha
+        -
+            label: Catppuccin Macchiato
+            value: theme-catppuccin-macchiato
     -
         id: settings-rain-icon
         type: class-toggle
@@ -118,7 +121,7 @@ settings:
         options:
             -
                 label: Disable
-                value: .heading-indicator-disable
+                value: heading-indicator-disable
             -
                 label: Auto Hide
                 value: heading-indicator-auto
@@ -187,6 +190,9 @@ settings:
             -
                 label: Subtle
                 value: colorful-folders-subtle
+            -
+                label: Length
+                value: colorful-folders-length
     -
         id: colorful-folders_indentation-guide
         type: class-toggle

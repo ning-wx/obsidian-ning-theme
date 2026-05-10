@@ -52,15 +52,17 @@ body {
   --nav-folder-collapse-color: var(--nav-collapse-icon-color);
 }
 
-.nav-folder-children > .nav-folder .nav-folder-title,
-.nav-files-container > div > .nav-folder .nav-folder-title {
-  color: var(--nav-folder-color);
-  background: var(--nav-folder-bg-color);
-  border-radius: 6px;
-
-  &:hover {
+body:not(.colorful-folders-length) {
+  .nav-folder-children > .nav-folder .nav-folder-title,
+  .nav-files-container > div > .nav-folder .nav-folder-title {
     color: var(--nav-folder-color);
-    background: var(--nav-folder-bg-color-hover);
+    background: var(--nav-folder-bg-color);
+    border-radius: 6px;
+
+    &:hover {
+      color: var(--nav-folder-color);
+      background: var(--nav-folder-bg-color-hover);
+    }
   }
 }
 
@@ -148,6 +150,45 @@ body.colorful-folders_background {
     &:nth-child(8n + 9) {
       --nav-folder-bg-color: var(--nav-folder-8-bg-color);
       --nav-folder-bg-color-hover: var(--nav-folder-8-bg-color-hover);
+    }
+  }
+}
+
+$max-level: 7;
+$max-color: 8; // 彩虹颜色数量
+
+body.colorful-folders-length {
+  .nav-folder-title::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 6px;
+    background: var(--nav-folder-bg-color);
+    z-index: -1;
+    left: 0;
+  }
+
+  // 循环生成多层级 left 偏移
+  @for $i from 1 through $max-level {
+    $selector: "";
+    @for $j from 1 through $i {
+      $selector: "#{$selector} .nav-folder-children";
+    }
+    $selector: "#{$selector} > .nav-folder > .nav-folder-title::before";
+
+    #{$selector} {
+      left: calc(var(--nav-item-children-padding-start) * #{4 * $i});
+    }
+  }
+
+  // 循环生成彩虹背景色
+  .nav-folder-children > .nav-folder,
+  .nav-files-container > div > .nav-folder {
+    @for $i from 2 through $max-color + 1 {
+      &:nth-child(8n + #{$i}) {
+        --nav-folder-bg-color: var(--nav-folder-#{$i - 1}-bg-color);
+        --nav-folder-bg-color-hover: var(--nav-folder-#{$i - 1}-bg-color-hover);
+      }
     }
   }
 }
@@ -294,13 +335,15 @@ body.alt-folder-icons {
 
   .nav-folder .tree-item-icon.is-collapsed svg.right-triangle {
     transform: unset;
-    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-folder'%3E%3Cpath d='M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z'/%3E%3C/svg%3E");
+    // -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-folder'%3E%3Cpath d='M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z'/%3E%3C/svg%3E");
+    -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
   }
 
   // File Explorer Folder Opened
   .nav-folder .tree-item-icon:not(.is-collapsed) svg.right-triangle {
     transform: unset;
-    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-folder-open'%3E%3Cpath d='m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2'/%3E%3C/svg%3E");
+    // -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-folder-open'%3E%3Cpath d='m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2'/%3E%3C/svg%3E");
+    -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
   }
 }
 
