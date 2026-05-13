@@ -11,14 +11,15 @@
 
 body {
   // --font-default: "PlaypenSans-Regular", sans-serif;
-  --font-default: "ppneuemontreal-book", sans-serif;
+  --font-default: "DM Sans", sans-serif;
   --font-interface-theme: "DM Mono", monospace;
   --font-monospace-theme: "DM Mono", monospace;
 }
 
 /* 公式字体 */
 mjx-container mjx-utext {
-  font-family: var(--font-text) !important;
+  font-family: var(--font-monospace-theme) !important;
+  color: var(--color-orange);
 }
 
 /*──────────────────────────────────────

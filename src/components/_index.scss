@@ -41,3 +41,13 @@ ul > li.task-list-item[data-task="x" i] {
 body.theme-light {
   -webkit-font-smoothing: antialiased;
 }
+
+span[data-col-prev][style*="--c:"]::before {
+  content: "";
+  display: inline-block;
+  background-color: var(--c);
+  width: 1em;
+  aspect-ratio: 1/1;
+  border-radius: 0.2em;
+  transform: translate(0, 2px);
+}
