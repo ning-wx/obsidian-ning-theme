@@ -17,9 +17,10 @@ body {
 }
 
 /* 公式字体 */
-mjx-container mjx-utext {
-  font-family: var(--font-monospace-theme) !important;
-  color: var(--color-orange);
+mjx-container mjx-utext,
+mjx-container[jax="CHTML"] {
+  // font-family: var(--font-monospace-theme) !important;
+  color: var(--color-red);
 }
 
 /*──────────────────────────────────────

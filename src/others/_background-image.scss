@@ -136,7 +136,7 @@ body.theme-dark {
   --anp-custom-bg-card-fg-opacity: var(--anp-custom-bg-card-fg-opacity-dark);
   // --background-base: 1, 41, 51;
   // --background-mantel: 0, 33, 41;
-  --background-base: 26, 29, 30;
+  --background-base: var(--mono-rgb-0);
   --background-mantel: 21, 23, 24;
   //   --background-base: 33, 28, 27;
   //   --background-mantel: 40, 34, 32;
@@ -279,6 +279,45 @@ body.theme-dark {
     .workspace-tabs
     .workspace-leaf {
     background-color: var(--card-foreground-color);
+  }
+
+  /* ====================== layout-frame ====================== */
+  &:is(.layout-frame) {
+    .workspace {
+      background-color: transparent;
+    }
+    .workspace-ribbon,
+    .workspace-split {
+      background-color: var(--card-foreground-color);
+    }
+  }
+
+  /* ====================== layout-cupertino ====================== */
+  &:is(.layout-cupertino):not(.is-mobile) {
+    .workspace:not(.is-left-sidedock-open):not(.is-right-sidedock-open) {
+      background-color: transparent;
+    }
+    .workspace.is-left-sidedock-open:not(.is-right-sidedock-open) {
+      background-color: transparent;
+    }
+    &:not(.show-ribbon:not(.hover-ribbon))
+      .workspace:not(.is-left-sidedock-open).is-right-sidedock-open {
+      background-color: transparent;
+    }
+  }
+
+  /* ====================== layout-mono ====================== */
+  &:is(.layout-mono) {
+    .workspace {
+      background-color: transparent;
+    }
+    .workspace-ribbon,
+    .workspace-split {
+      background-color: var(--card-foreground-color);
+    }
+    .mod-sidedock .workspace-sidedock-vault-profile {
+      background-color: var(--card-foreground-color);
+    }
   }
 }
 

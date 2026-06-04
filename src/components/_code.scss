@@ -1,6 +1,8 @@
 body {
-  --inline-code-padding-vertical: 0.1em;
-  --inline-code-padding-horizontal: 0.2em;
+  --inline-code-padding-vertical: 1px;
+  --inline-code-padding-horizontal: 1px;
+  --code-border-width: 1px;
+  --code-border-color: var(--background-secondary-alt);
 }
 
 /* 阅读模式 */
@@ -10,7 +12,9 @@ body {
   div:not(.el-pre)
   code {
   color: var(--inline-code-color) !important;
-  background-color: var(--color-base-20);
+  background-color: var(--code-background);
+  border-radius: var(--radius-m);
+  padding: 0em 0.2em;
 }
 
 /* 实时预览 */
@@ -19,7 +23,9 @@ body {
   :not(pre)
   > code.codeblock-customizer-inline-code {
   color: var(--inline-code-color) !important;
-  background-color: var(--color-base-20);
+  background-color: var(--code-background);
+  border-radius: var(--radius-m);
+  padding: 0em 0.2em;
 }
 
 /* 源码模式 */
@@ -29,7 +35,9 @@ body {
   ),
 .cm-formatting.cm-formatting-code.cm-inline-code {
   color: var(--inline-code-color);
-  background-color: var(--color-base-20);
+  background-color: var(--code-background);
+  border-radius: var(--radius-m);
+  padding: 0em 0.2em;
 }
 
 @function prefix-selectors($list) {
@@ -91,5 +99,3 @@ body {
   //   --code-value: #272ad8;
   // }
 }
-
-

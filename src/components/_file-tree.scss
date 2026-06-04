@@ -1,0 +1,35 @@
+.workspace-leaf-content .tree-item-self {
+  --nav-item-background-hover: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.3
+  );
+}
+
+:is([data-type="bookmarks"], [data-type="file-explorer"]) {
+  .tree-item-self.mod-collapsible {
+    --nav-item-background-active: hsla(
+      var(--accent-h),
+      var(--accent-s),
+      var(--accent-l),
+      0.3
+    );
+  }
+  .tree-item:not(.is-collapsed) .tree-item-self.mod-collapsible {
+    background-color: var(--nav-item-background-active);
+    --nav-item-color: var(--text-accent);
+    --nav-collapse-icon-color: var(--color-accent-1);
+  }
+  .tree-item:not(.is-collapsed) .tree-item-self.mod-collapsible.has-focus {
+    background-color: var(--text-selection);
+  }
+  .tree-item-children
+    > .tree-item.is-collapsed
+    .tree-item-self.mod-collapsible {
+    --nav-item-background-active: transparent;
+    --text-selection: var(--background-modifier-hover);
+    --nav-item-color: var(--color-base-80);
+    --nav-collapse-icon-color: var(--nav-folder-color);
+  }
+}
